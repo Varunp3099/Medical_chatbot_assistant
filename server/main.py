@@ -1,6 +1,3 @@
-import os
-print("GOOGLE_API_KEY =", os.getenv("GOOGLE_API_KEY"))
-
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
