@@ -25,6 +25,7 @@ app.middleware("http")(catch_exception_middleware)
 # routers
 
 # 1. upload pdfs documents
-app.include_router(upload_router)
+app.include_router(upload_router, prefix="/upload")
+
 # 2. asking query
-app.include_router(ask_router)
+app.include_router(ask_router, prefix="/ask")
